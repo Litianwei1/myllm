@@ -19,6 +19,7 @@ class AIController {
         this.chatClient = chatClient;
     }
 
+
     @PostMapping("/ai/simple")
     public String completion(@RequestBody Map<String, String> request) {
                 return chatClient.prompt()
